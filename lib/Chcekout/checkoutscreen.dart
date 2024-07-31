@@ -21,7 +21,7 @@ class _CheckoutscreenState extends State<Checkoutscreen> {
         centerTitle: true,
 
       ),
-      body: Column(
+      body:SingleChildScrollView(child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
 
@@ -40,7 +40,7 @@ class _CheckoutscreenState extends State<Checkoutscreen> {
           ),
 
         ],
-      ),
+      ),),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(15),
         child: GestureDetector(
