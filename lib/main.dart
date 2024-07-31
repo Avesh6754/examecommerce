@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       routes: {
-        '/':(context)=>Spalshscreen(),
-        '/home':(context)=>Homescreen(),
-        '/detail':(context)=>Detailscreen(),
-        '/Cart':(context)=>Cartscreen(),
-        '/check':(context)=>Checkoutscreen()
+        '/':(context)=>const Spalshscreen(),
+        '/home':(context)=>const Homescreen(),
+        '/detail':(context)=>const Detailscreen(),
+        '/Cart':(context)=>const Cartscreen(),
+        '/check':(context)=>const Checkoutscreen()
       },
     );
   }

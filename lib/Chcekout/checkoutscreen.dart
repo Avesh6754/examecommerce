@@ -16,8 +16,8 @@ class _CheckoutscreenState extends State<Checkoutscreen> {
       appBar: AppBar(
         leading: InkWell(onTap: () {
           Navigator.of(context).pop();
-        },child: Icon(Icons.arrow_back_ios,size: 30,)),
-        title: Text("Checkout",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+        },child: const Icon(Icons.arrow_back_ios,size: 30,)),
+        title: const Text("Checkout",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
         centerTitle: true,
 
       ),
@@ -60,8 +60,8 @@ class _CheckoutscreenState extends State<Checkoutscreen> {
 }
 ListTile checktudf({required String name,required double price,}) {
   return ListTile(
-    title: Text("$name",style: TextStyle(fontSize: 25,fontWeight: FontWeight.w600)),
-    trailing: Text("\$${price.toInt()}",style: TextStyle(fontSize: 25,fontWeight: FontWeight.w600)),
+    title: Text("$name",style: const TextStyle(fontSize: 25,fontWeight: FontWeight.w600)),
+    trailing: Text("\$${price.toInt()}",style: const TextStyle(fontSize: 25,fontWeight: FontWeight.w600)),
     
   );
   
