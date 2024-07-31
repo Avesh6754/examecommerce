@@ -17,6 +17,7 @@ class _DetailscreenState extends State<Detailscreen> {
       backgroundColor: Colors.white,
       body: Padding(
         padding:const EdgeInsets.only(top: 30),
+
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
