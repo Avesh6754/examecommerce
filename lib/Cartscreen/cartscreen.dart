@@ -24,12 +24,13 @@ class _CartscreenState extends State<Cartscreen> {
         centerTitle: true,
 
       ),
-      body: Column(
+      body:SingleChildScrollView(child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ...List.generate(cart.length,(index)=>cartudf(name: cart[index]['name'],price: cart[index]['price'],image: cart[index]['image'],index: index))
         ],
       ),
+       ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(15),
         child: InkWell(
